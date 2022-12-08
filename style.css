@@ -1,0 +1,234 @@
+html body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #ccc;
+    display: grid;
+    gap: 5px;
+
+    grid-template-areas:
+    "header header header"
+    "content-one content-one content-one "
+    "main main main"
+    "content-two content-two content-two"
+    "sobre sobre sobre"
+    "footer footer footer"
+    ;
+    
+}
+
+
+.header{
+  
+  
+    grid-area: header;
+    height: 50vh;
+    background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-size: cover;
+}
+.header-items{
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ font-family: sans-serif;
+  
+
+  
+}
+
+.header-items h1{ 
+    color: #fff;
+}
+
+.header-items p{
+    color: #fff;
+}
+
+.botao{
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #363434;
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: #fff;
+    color: #363434;
+}
+
+
+
+
+.content-one{
+    grid-area: content-one;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+ 
+    margin-top: 60px;
+}
+.content-one h2{
+    text-align: center;    
+    font-family: sans-serif;
+
+}
+
+.main{
+    grid-area: main;
+    height: 70vh;
+    background-color: #363434;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.card-um{
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.card-um p{
+    padding:15px;
+    text-align: justify;
+    color: black;
+
+
+}
+
+
+
+.card-dois{
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+
+
+.card-dois p{
+    background-color: white;
+    padding:15px;
+    text-align: start;
+    color: black;
+    
+    }
+
+.card-tres{
+    background-color: white;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+
+}
+
+.card-tres p{
+    padding:15px;
+    text-align: justify;
+    color: black;
+}
+
+.content-two{
+    grid-area: content-two;
+    height: 30vh;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.text-three{
+    width: 400px;
+
+}
+
+.text-for{
+    width: 400px;
+}
+   
+  
+
+
+.text-one{
+    
+   
+    width: 400px;
+  
+
+}
+
+.text-two{
+    width: 400px;
+
+   
+
+}
+
+
+
+.sobre{
+    display: flex;
+    grid-area: sobre;
+    height: 20vh;
+}
+
+.sobre-one{
+    width: 50%;
+    height: 300px;
+    background-color:#2690d4;
+}
+
+.sobre-two{
+    width: 50%;
+    height: 300px;
+    background-color: #333;
+}
+
+.sobre-one h2, p{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-family: sans-serif;
+    color: #fff;
+
+}
+
+.sobre-two h2, p{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-family: sans-serif;
+    color: #fff;
+    padding: 15px;
+}
+
+
+
+.footer{
+    grid-area: footer;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+
+
+}
+
+.rodape p{
+    color: #333;
+    text-align: center;
+}
